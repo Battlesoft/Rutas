@@ -1,13 +1,14 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div className="navbar navbar-dark bg-dark">
-            <link className="btn btn-outline-primary" to="/">Inicio</link>
-            <link className="btn btn-outline-primary" to="/contacto">Contacto</link>
-            <link className="btn btn-outline-primary" to="/blog">Blog</link>
+            <Link className="btn btn-outline-primary" to="/">Inicio</Link>
+            <Link className="btn btn-outline-primary" to="/contacto">Contacto</Link>
+            <Link className="btn btn-outline-primary" to="/blog">Blog</Link>
         </div>
     )
 }
 
-export default Navbar
+export default Navbar;
